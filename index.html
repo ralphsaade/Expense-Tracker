@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2 class="my-4">Expense Tracker</h2>
+    <form id="expense-form">
+      <div class="form-group">
+        <label for="expenseName">Expense Name:</label>
+        <input type="text" class="form-control" id="expenseName" required>
+      </div>
+      <div class="form-group">
+        <label for="expenseAmount">Amount:</label>
+        <input type="number" class="form-control" id="expenseAmount" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+    <table class="table table-striped mt-4" id="expenseTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <h4 class="mt-4">Total: <span id="totalExpense">0</span></h4>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
