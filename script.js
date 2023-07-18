@@ -8,7 +8,7 @@ $(document).ready(function() {
       const expenseAmount = $('#expenseAmount').val();
       
       if(expenseName.trim() === "" || expenseAmount.trim() === "") {
-        alert("Please fill in all the fields");
+         $('#errorMessage').text("Please fill in all the fields");
       } else {
         totalExpense += parseFloat(expenseAmount);
   
